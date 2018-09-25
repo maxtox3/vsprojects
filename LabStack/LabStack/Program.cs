@@ -22,10 +22,8 @@ namespace LabStack
             Console.WriteLine(x.Pop());
             Console.WriteLine(x.Pop());
             Console.WriteLine(x.Pop());
-            Console.WriteLine("Количество элемкентов после : " + x.Count);
-
-
-
+            Console.WriteLine("Количество элемкентов  : " + x.Count);
+            
             Console.ReadLine();
         }
     }
