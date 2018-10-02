@@ -10,12 +10,17 @@ namespace LabRectangle
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Введите значение длины : ");
+            int lenght = int.Parse(Console.ReadLine());
 
-            Rectangle x = new Rectangle();
-            Console.WriteLine("Площадь фигуры:" + x.getArea());
+            Console.WriteLine("Введите значение ширины : ");
+            int width = int.Parse(Console.ReadLine());
+            Rectangle x = new Rectangle(lenght, width);
+            Console.WriteLine("Площадь введенной вами фигуры: " + x.getArea());
 
             Rectangle y = new Rectangle(1, 2);
             Console.WriteLine("Площадь второй фигуры :" + y.getArea());
+            Console.ReadLine();
         }
     }
 
